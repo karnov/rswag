@@ -29,7 +29,7 @@ module Rswag
 
       def swagger_dry_run
         @swagger_dry_run ||= begin
-          @rspec_config.swagger_dry_run.nil? || @rspec_config.swagger_dry_run
+          @rspec_config.swagger_dry_run || false
         end
       end
 
